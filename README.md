@@ -1,13 +1,36 @@
-# Sample Hardhat Project
+# Travel DApp
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+A decentralized travel planning application built for a university project.
 
-Try running some of the following tasks:
+## Features
+- Create a trip
+- View all active trips
+- Add expenses to a trip
+- Delete trips
+- Planner and payer names shown in the frontend
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+## Tech Stack
+- Solidity
+- Hardhat
+- React
+- Ethers.js
+- MetaMask
+
+## How to Run
+
+### Backend
+1. Start local blockchain:
+   npx hardhat node
+
+2. Deploy contract:
+   npx hardhat run scripts/deploy.js --network localhost
+
+### Frontend
+1. Go to frontend folder:
+   cd frontend
+
+2. Install dependencies:
+   npm install
+
+3. Start app:
+   npm run dev
